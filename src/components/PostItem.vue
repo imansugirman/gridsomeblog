@@ -12,7 +12,7 @@
                 <span v-if="post.tags && post.tags.length > 0"> in <g-link :to="`${post.tags[0].path}/`" class="text-grey-darker capitalize no-underline border-b border-transparent hover:border-grey transition-border-color">{{ titleCase(post.tags[0].title) }}</g-link></span>
               </p>
               <div class="text-indigo font-bold text-xl mb-2"><g-link :to="`${post.path}/`" class="text-black no-underline">{{ post.title }}</g-link></div>
-              <p class="text-grey-darker text-base" v-html="excerpt(post, 160, ' ...')"></p>
+              <p class="text-grey-darker text-base" v-html="excerpt(post, 180, ' ...')"></p>
             </div>
             <div class="flex items-center">
               <img class="w-10 h-10 rounded-full mr-4" src="https://tailwindcss.com/img/jonathan.jpg" alt="Avatar of Jonathan Reinink">

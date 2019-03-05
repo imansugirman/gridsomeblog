@@ -24,7 +24,7 @@
   }
 
   pre.shiki {
-    @apply -mx-6 p-6 mb-4 text-sm font-mono leading-code overflow-x-auto scrolling-touch;
+    @apply rounded-lg px-4 py-2 mb-4 text-sm font-mono leading-code overflow-x-auto scrolling-touch;
   }
 
   code.shiki {
@@ -85,4 +85,3 @@
     background: rgba(0,0,0,.15);
   }
 }
-

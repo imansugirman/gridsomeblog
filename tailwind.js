@@ -195,7 +195,7 @@ module.exports = {
 
   fonts: {
     'sans': [
-      'Nunito',
+      'Source Sans Pro',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -204,13 +204,13 @@ module.exports = {
       'Oxygen',
       'Ubuntu',
       'Cantarell',
-      'Nunito',
+      'Source Sans Pro',
       'Droid Sans',
       'Helvetica Neue',
       'sans-serif',
     ],
     'serif': [
-      'Nunito',
+      'Source Sans Pro',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',

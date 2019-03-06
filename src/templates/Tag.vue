@@ -76,7 +76,7 @@ query Tag ($path: String!, $page: Int) {
           ...on Post {
             id
             title
-            datetime: date (format: "YYYY-MM-DD HH:mm:ss")
+            datetime: date (format: "DD-MM-YYYY HH:mm:ss")
             path
             content
             excerpt

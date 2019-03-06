@@ -18,7 +18,7 @@ title: "${title}"
 slug:
 description: ""
 date: ${postDate}
-author: bleda-gridsome
+author: iman-sugirman
 tags:
 cover:
 fullscreen: false

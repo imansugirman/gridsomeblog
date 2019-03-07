@@ -3,7 +3,7 @@ title: "Getting started"
 slug: getting-started-with-gridsome-and-bleda
 description: "Getting started with the Bleda blog starter theme for the Gridsome static site generator"
 date: 2019-03-01 14:43:24
-author: bleda
+author: iman-sugirman
 tags:
     - getting-started
 cover: https://images.unsplash.com/photo-1542373285-a85124c4f3e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80

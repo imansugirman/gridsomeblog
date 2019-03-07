@@ -3,7 +3,7 @@ title: "Install Wordpress di Localhost dengan Laravel Valet"
 slug:
 description: ""
 date: 2019-03-05 21:38:50
-author: bleda-gridsome
+author: iman-sugirman
 tags:
   - Laravel Valet
   - Wordpress

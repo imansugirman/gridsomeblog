@@ -5,7 +5,7 @@ class TailwindExtractor {
 }
 
 module.exports = {
-  siteName: 'agatha',
+  siteName: 'Iman Sugirman Blog',
   siteDescription: "Blog Seputar Tutorial Coding, Cloud Server dan Pengalaman Web Developer Sehari-Hari",
   siteUrl: 'https://imans.me',
   titleTemplate: `%s | Hello`,
@@ -47,7 +47,7 @@ module.exports = {
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-135446199-1'
+        id: 'UA-64527992-1'
       }
     },
     {
@@ -61,9 +61,9 @@ module.exports = {
       options: {
         contentTypeName: 'Post',
         feedOptions: {
-          title: 'Bleda, a Gridsome blog starter',
-          feed_url: 'https://gridsome-starter-bleda.netlify.com/feed.xml',
-          site_url: 'https://gridsome-starter-bleda.netlify.com'
+          title: 'Iman Sugirman Blog',
+          feed_url: 'https://imans.me/feed.xml',
+          site_url: 'https://imans.me'
         },
         feedItemOptions: node => ({
           title: node.title,

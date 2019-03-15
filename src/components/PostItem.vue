@@ -32,17 +32,18 @@
 
 <script>
 import moment from 'moment'
+import 'moment/locale/id' // <- add this
 
 export default {
   props: ['post'],
   computed: {
     formattedPublishDate() {
-      return moment(this.post.datetime).format('DD MMMM, YYYY');
+      return moment(this.post.datetime).format('YYYY-MM-DD');
     },
   },
   methods: {
     formatPublishDate(date) {
-      return moment(date).format('DD MMMM, YYYY');
+      return moment(date).format('YYYY-MM-DD');
     },
     imageLoadError (e) {
       e.target.src = `/images/authors/default.png`

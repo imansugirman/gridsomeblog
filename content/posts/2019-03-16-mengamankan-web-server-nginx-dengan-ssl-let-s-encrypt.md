@@ -54,7 +54,7 @@ Jika Anda memulai dengan instalasi Nginx baru, Anda dapat memperbarui file konfi
 sudo nano /etc/nginx/sites-available/default
 ```
 Temukan baris `server_name` yang ada dan ganti underscore, `_` , dengan nama domain Anda:
-```nginx
+```bash
 . . .
 server_name example.com www.example.com;
 . . .
@@ -82,7 +82,7 @@ Anda dapat melihat pengaturan saat ini dengan mengetik:
 sudo ufw status
 ```
 Ini mungkin akan terlihat seperti ini, artinya hanya lalu lintas HTTP yang diizinkan ke server web:
-```
+```bash
 Status: active
 
 To                         Action      From
@@ -102,7 +102,7 @@ Status Anda akan terlihat seperti ini sekarang:
 sudo ufw status
 ```
 Output :
-```
+```bash
 Status: active
 
 To                         Action      From
@@ -124,7 +124,7 @@ Ini menjalankan `certbot` dengan plugin `--nginx`, menggunakan `-d` untuk menent
 Jika ini adalah kali pertama Anda menjalankan `certbot`, Anda akan diminta memasukkan alamat email dan menyetujui persyaratan layanan. Setelah melakukannya, `certbot` akan berkomunikasi dengan server Let's Encrypt, kemudian jalankan tantangan untuk memverifikasi bahwa Anda mengendalikan domain yang Anda minta sertifikat.
 
 Jika itu berhasil, `certbot` akan menanyakan bagaimana Anda ingin mengkonfigurasi pengaturan HTTPS Anda.
-```
+```bash
 Please choose whether or not to redirect HTTP traffic to HTTPS, removing HTTP access.
 -------------------------------------------------------------------------------
 1: No redirect - Make no further changes to the webserver configuration.
@@ -135,7 +135,7 @@ change by editing your web server's configuration.
 Select the appropriate number [1-2] then [enter] (press 'c' to cancel):
 ```
 Pilih pilihan Anda lalu tekan `ENTER`. Konfigurasi akan diperbarui, dan Nginx akan memuat ulang untuk mengambil pengaturan baru. `certbot` akan membungkus dengan pesan yang memberitahukan Anda bahwa prosesnya berhasil dan di mana sertifikat Anda disimpan:
-```
+```bash
 **IMPORTANT NOTES:**
 
  - Congratulations! Your certificate and chain have been saved at
@@ -151,9 +151,13 @@ Pilih pilihan Anda lalu tekan `ENTER`. Konfigurasi akan diperbarui, dan Nginx ak
    making regular backups of this folder is ideal.
  - If you like Certbot, please consider supporting our work by:
 
-   Donating to ISRG / Let's Encrypt:   https://letsencrypt.org/donate
+   Donating to ISRG / Lets Encrypt:   https://letsencrypt.org/donate
    Donating to EFF:                    https://eff.org/donate-le
+
 ```
+
+### hellocosmin
+
 Sertifikat Anda diunduh, dipasang, dan dimuat. Coba muat ulang situs web Anda menggunakan https: // dan perhatikan indikator keamanan browser Anda. Ini harus menunjukkan bahwa situs tersebut diamankan dengan benar, biasanya dengan ikon kunci hijau. Jika Anda menguji server Anda menggunakan Uji Labs Server SSL, itu akan mendapat nilai A.
 
 Mari kita selesaikan dengan menguji proses pembaruan.

@@ -41,6 +41,7 @@
 
 <script>
 import moment from 'moment'
+import 'moment/locale/id' // <- add this
 import Alert from '@/components/Alert'
 import SiteFooter from '@/components/Footer'
 import PostHeader from '~/components/PostHeader'
@@ -70,6 +71,9 @@ export default {
         { property: "og:image", content: this.$page.post.cover },
       ],
     }
+  },
+  formatPublishDate(date) {
+    return moment(date).format('YYYY-MM-DD');
   },
   mounted () {
     import('medium-zoom').then(mediumZoom => {
@@ -115,7 +119,7 @@ export default {
 query Post ($path: String) {
   post (path: $path) {
     title
-    datetime: date (format: "DD-MM-YYYY HH:mm:ss")
+    datetime: date (format: "YYYY-MM-DD HH:mm:ss")
     content
     description
     timeToRead

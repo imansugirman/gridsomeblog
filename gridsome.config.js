@@ -8,7 +8,7 @@ module.exports = {
   siteName: 'Iman Sugirman Blog',
   siteDescription: "Blog Seputar Tutorial Coding, Cloud Server dan Pengalaman Web Developer Sehari-Hari",
   siteUrl: 'https://imans.me',
-  titleTemplate: `%s | Hello`,
+  titleTemplate: `%s | Iman Sugirman Blog`,
   icon: 'src/favicon.png',
 
   transformers: {

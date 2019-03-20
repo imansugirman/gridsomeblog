@@ -8,6 +8,6 @@ export default function (Vue, { head }) {
 
   head.link.push({
     rel: 'stylesheet',
-    href: 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700'
+    href: 'https://fonts.googleapis.com/css?family=Fira+Mono|Nunito:400,700,800,900|Source+Sans+Pro:400,600,700'
   })
 }

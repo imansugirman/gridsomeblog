@@ -1,3 +1,43 @@
 ::selection {
   @apply text-white bg-black;
 }
+
+@font-face {
+    font-family: 'Sentinel';
+    src: url('../fonts/Sentinel-Semibold.woff2') format('woff2'),
+        url('../fonts/Sentinel-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sentinel';
+    src: url('../fonts/Sentinel-Black.woff2') format('woff2'),
+        url('../fonts/Sentinel-Black.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BentonSans';
+    src: url('../fonts/BentonSans-Light.woff2') format('woff2'),
+        url('../fonts/BentonSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BentonSans';
+    src: url('../fonts/BentonSans-Bold.woff2') format('woff2'),
+        url('../fonts/BentonSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BentonSans';
+    src: url('../fonts/BentonSans.woff2') format('woff2'),
+        url('../fonts/BentonSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

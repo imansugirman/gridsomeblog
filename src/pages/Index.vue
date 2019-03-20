@@ -3,10 +3,10 @@
     <main>
       <header>
         <div class="container xl:max-w-xl mx-auto text-center px-6 py-10 md:py-32 border-b border-grey-lighter">
-          <h1 class="text-4xl sm:text-5xl md:text-6xl font-sans font-bold mb-1">
-            <g-link to="/" class="text-black no-underline">im@n</g-link>
-          </h1>
-          <p class="text-grey-dark text-lg sm:text-3xl">blog tentang saya</p>
+          <h2 class="text-3xl sm:text-5xl font-sans font-black mb-1">
+            <g-link to="/" class="text-black no-underline tracking-tight">Iman Sugirman</g-link>
+          </h2>
+          <p class="text-grey-dark sm:text-2xl tracking-tight">Tutorial Blog, Cloud Server, Laravel dan Wordpress</p>
         </div>
       </header>
       <section>

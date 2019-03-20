@@ -3,21 +3,6 @@
 let defaultConfig = require('tailwindcss/defaultConfig')()
 
 
-/*
-|-------------------------------------------------------------------------------
-| Colors                                    https://tailwindcss.com/docs/colors
-|-------------------------------------------------------------------------------
-|
-| Here you can specify the colors used in your project. To get you started,
-| we've provided a generous palette of great looking colors that are perfect
-| for prototyping, but don't hesitate to change them for your project. You
-| own these colors, nothing will break if you change everything about them.
-|
-| We've used literal color names ("red", "blue", etc.) for the default
-| palette, but if you'd rather use functional names like "primary" and
-| "secondary", or even a numeric scale like "100" and "200", go for it.
-|
-*/
 
 let colors = {
   'transparent': 'transparent',
@@ -107,40 +92,9 @@ let colors = {
 
 module.exports = {
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Colors                                  https://tailwindcss.com/docs/colors
-  |-----------------------------------------------------------------------------
-  |
-  | The color palette defined above is also assigned to the "colors" key of
-  | your Tailwind config. This makes it easy to access them in your CSS
-  | using Tailwind's config helper. For example:
-  |
-  | .error { color: config('colors.red') }
-  |
-  */
 
   colors: colors,
 
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Screens                      https://tailwindcss.com/docs/responsive-design
-  |-----------------------------------------------------------------------------
-  |
-  | Screens in Tailwind are translated to CSS media queries. They define the
-  | responsive breakpoints for your project. By default Tailwind takes a
-  | "mobile first" approach, where each screen size represents a minimum
-  | viewport width. Feel free to have as few or as many screens as you
-  | want, naming them in whatever way you'd prefer for your project.
-  |
-  | Tailwind also allows for more complex screen definitions, which can be
-  | useful in certain situations. Be sure to see the full responsive
-  | documentation for a complete list of options.
-  |
-  | Class name: .{screen}:{utility}
-  |
-  */
 
   screens: {
     'sm': '576px',
@@ -149,29 +103,9 @@ module.exports = {
     'xl': '1200px',
   },
 
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Fonts                                    https://tailwindcss.com/docs/fonts
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your project's font stack, or font families.
-  | Keep in mind that Tailwind doesn't actually load any fonts for you.
-  | If you're using custom fonts you'll need to import them prior to
-  | defining them here.
-  |
-  | By default we provide a native font stack that works remarkably well on
-  | any device or OS you're using, since it just uses the default fonts
-  | provided by the platform.
-  |
-  | Class name: .font-{name}
-  | CSS property: font-family
-  |
-  */
-
   fonts: {
     'sans': [
-      'Source Sans Pro',
+      'Sentinel',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -186,7 +120,7 @@ module.exports = {
       'sans-serif',
     ],
     'serif': [
-      'Source Sans Pro',
+      'BentonSans',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',
@@ -199,7 +133,7 @@ module.exports = {
       'serif',
     ],
     'mono': [
-      'Menlo',
+      'Fira Mono',
       'Monaco',
       'Consolas',
       'Liberation Mono',
@@ -208,26 +142,6 @@ module.exports = {
     ],
   },
 
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Text sizes                         https://tailwindcss.com/docs/text-sizing
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your text sizes. Name these in whatever way
-  | makes the most sense to you. We use size names by default, but
-  | you're welcome to use a numeric scale or even something else
-  | entirely.
-  |
-  | By default Tailwind uses the "rem" unit type for most measurements.
-  | This allows you to set a root font size which all other sizes are
-  | then based on. That said, you are free to use whatever units you
-  | prefer, be it rems, ems, pixels or other.
-  |
-  | Class name: .text-{size}
-  | CSS property: font-size
-  |
-  */
 
   textSizes: {
     'xs': '.75rem',     // 12px
@@ -243,20 +157,6 @@ module.exports = {
   },
 
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Font weights                       https://tailwindcss.com/docs/font-weight
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your font weights. We've provided a list of
-  | common font weight names with their respective numeric scale values
-  | to get you started. It's unlikely that your project will require
-  | all of these, so we recommend removing those you don't need.
-  |
-  | Class name: .font-{weight}
-  | CSS property: font-weight
-  |
-  */
 
   fontWeights: {
     'hairline': 100,
@@ -271,18 +171,6 @@ module.exports = {
   },
 
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Leading (line height)              https://tailwindcss.com/docs/line-height
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your line height values, or as we call
-  | them in Tailwind, leadings.
-  |
-  | Class name: .leading-{size}
-  | CSS property: line-height
-  |
-  */
 
   leading: {
     'none': 1,
@@ -293,18 +181,6 @@ module.exports = {
   },
 
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Tracking (letter spacing)       https://tailwindcss.com/docs/letter-spacing
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your letter spacing values, or as we call
-  | them in Tailwind, tracking.
-  |
-  | Class name: .tracking-{size}
-  | CSS property: letter-spacing
-  |
-  */
 
   tracking: {
     'tight': '-0.05em',
@@ -313,53 +189,12 @@ module.exports = {
   },
 
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Text colors                         https://tailwindcss.com/docs/text-color
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your text colors. By default these use the
-  | color palette we defined above, however you're welcome to set these
-  | independently if that makes sense for your project.
-  |
-  | Class name: .text-{color}
-  | CSS property: color
-  |
-  */
 
   textColors: colors,
 
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Background colors             https://tailwindcss.com/docs/background-color
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your background colors. By default these use
-  | the color palette we defined above, however you're welcome to set
-  | these independently if that makes sense for your project.
-  |
-  | Class name: .bg-{color}
-  | CSS property: background-color
-  |
-  */
-
   backgroundColors: colors,
 
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Background sizes               https://tailwindcss.com/docs/background-size
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your background sizes. We provide some common
-  | values that are useful in most projects, but feel free to add other sizes
-  | that are specific to your project here as well.
-  |
-  | Class name: .bg-{size}
-  | CSS property: background-size
-  |
-  */
 
   backgroundSize: {
     'auto': 'auto',
@@ -368,19 +203,6 @@ module.exports = {
   },
 
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Border widths                     https://tailwindcss.com/docs/border-width
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your border widths. Take note that border
-  | widths require a special "default" value set as well. This is the
-  | width that will be used when you do not specify a border width.
-  |
-  | Class name: .border{-side?}{-width?}
-  | CSS property: border-width
-  |
-  */
 
   borderWidths: {
     default: '1px',
@@ -391,43 +213,9 @@ module.exports = {
   },
 
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Border colors                     https://tailwindcss.com/docs/border-color
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your border colors. By default these use the
-  | color palette we defined above, however you're welcome to set these
-  | independently if that makes sense for your project.
-  |
-  | Take note that border colors require a special "default" value set
-  | as well. This is the color that will be used when you do not
-  | specify a border color.
-  |
-  | Class name: .border-{color}
-  | CSS property: border-color
-  |
-  */
-
   borderColors: global.Object.assign({ default: colors['grey-light'] }, colors),
 
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Border radius                    https://tailwindcss.com/docs/border-radius
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your border radius values. If a `default` radius
-  | is provided, it will be made available as the non-suffixed `.rounded`
-  | utility.
-  |
-  | If your scale includes a `0` value to reset already rounded corners, it's
-  | a good idea to put it first so other values are able to override it.
-  |
-  | Class name: .rounded{-side?}{-size?}
-  | CSS property: border-radius
-  |
-  */
 
   borderRadius: {
     'none': '0',
@@ -438,26 +226,6 @@ module.exports = {
   },
 
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Width                                    https://tailwindcss.com/docs/width
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your width utility sizes. These can be
-  | percentage based, pixels, rems, or any other units. By default
-  | we provide a sensible rem based numeric scale, a percentage
-  | based fraction scale, plus some other common use-cases. You
-  | can, of course, modify these values as needed.
-  |
-  |
-  | It's also worth mentioning that Tailwind automatically escapes
-  | invalid CSS class name characters, which allows you to have
-  | awesome classes like .w-2/3.
-  |
-  | Class name: .w-{size}
-  | CSS property: width
-  |
-  */
 
   width: {
     'auto': 'auto',
@@ -492,21 +260,6 @@ module.exports = {
   },
 
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Height                                  https://tailwindcss.com/docs/height
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your height utility sizes. These can be
-  | percentage based, pixels, rems, or any other units. By default
-  | we provide a sensible rem based numeric scale plus some other
-  | common use-cases. You can, of course, modify these values as
-  | needed.
-  |
-  | Class name: .h-{size}
-  | CSS property: height
-  |
-  */
 
   height: {
     'auto': 'auto',
@@ -529,42 +282,12 @@ module.exports = {
     'screen': '100vh',
   },
 
-
-  /*
-  |-----------------------------------------------------------------------------
-  | Minimum width                        https://tailwindcss.com/docs/min-width
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your minimum width utility sizes. These can
-  | be percentage based, pixels, rems, or any other units. We provide a
-  | couple common use-cases by default. You can, of course, modify
-  | these values as needed.
-  |
-  | Class name: .min-w-{size}
-  | CSS property: min-width
-  |
-  */
-
   minWidth: {
     '0': '0',
     'full': '100%',
   },
 
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Minimum height                      https://tailwindcss.com/docs/min-height
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your minimum height utility sizes. These can
-  | be percentage based, pixels, rems, or any other units. We provide a
-  | few common use-cases by default. You can, of course, modify these
-  | values as needed.
-  |
-  | Class name: .min-h-{size}
-  | CSS property: min-height
-  |
-  */
 
   minHeight: {
     '0': '0',
@@ -574,21 +297,6 @@ module.exports = {
   },
 
 
-  /*
-  |-----------------------------------------------------------------------------
-  | Maximum width                        https://tailwindcss.com/docs/max-width
-  |-----------------------------------------------------------------------------
-  |
-  | Here is where you define your maximum width utility sizes. These can
-  | be percentage based, pixels, rems, or any other units. By default
-  | we provide a sensible rem based scale and a "full width" size,
-  | which is basically a reset utility. You can, of course,
-  | modify these values as needed.
-  |
-  | Class name: .max-w-{size}
-  | CSS property: max-width
-  |
-  */
 
   maxWidth: {
     'xs': '20rem',

@@ -20,7 +20,6 @@
 
 <script>
 import moment from 'moment'
-import 'moment/locale/id' // <- add this
 import config from '~/.temp/config.js'
 import SiteFooter from '@/components/Footer'
 import PostItem from '@/components/PostItem'
@@ -66,7 +65,7 @@ export default {
         node {
           id
           title
-          datetime: date (format: "YYYY-MM-DD HH:mm:ss")
+          datetime: date (format: "YYYY MM DD HH:mm:ss")
           content
           excerpt
           description

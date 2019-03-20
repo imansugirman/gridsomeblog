@@ -41,7 +41,6 @@
 
 <script>
 import moment from 'moment'
-import 'moment/locale/id' // <- add this
 import Alert from '@/components/Alert'
 import SiteFooter from '@/components/Footer'
 import PostHeader from '~/components/PostHeader'
@@ -65,15 +64,15 @@ export default {
         { name: "twitter:description", content: this.description(this.$page.post) },
         { name: "twitter:title", content: this.$page.post.title },
         { name: "twitter:site", content: "@nakamuraagatha" },
-        { name: "twitter:image", content: this.$page.post.cover },
+        { name: "twitter:image", content: 'images/posts/gridsome.png' },
         { name: "twitter:creator", content: "@nakamuraagatha" },
         { property: "og:updated_time", content: this.$page.post.datetime },
-        { property: "og:image", content: this.$page.post.cover },
+        { property: "og:image", content: 'images/posts/gridsome.png' },
       ],
     }
   },
   formatPublishDate(date) {
-    return moment(date).format('YYYY-MM-DD');
+    return moment(date).format('YYYY MM DD');
   },
   mounted () {
     import('medium-zoom').then(mediumZoom => {
@@ -119,7 +118,7 @@ export default {
 query Post ($path: String) {
   post (path: $path) {
     title
-    datetime: date (format: "YYYY-MM-DD HH:mm:ss")
+    datetime: date (format: "YYYY MM DD HH:mm:ss")
     content
     description
     timeToRead

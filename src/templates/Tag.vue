@@ -45,9 +45,9 @@ export default {
         { name: "twitter:description", content: `Browse posts tagged "${this.titleCase(this.$page.tag.title)}"` },
         { name: "twitter:title", content: `Posts tagged "${this.titleCase(this.$page.tag.title)}"` },
         { name: "twitter:site", content: "@nakamuraagatha" },
-        { name: "twitter:image", content: this.$page.post.cover },
+        { name: "twitter:image", content: 'images/posts/gridsome.png' },
         { name: "twitter:creator", content: "@nakamuraagatha" },
-        { property: "og:image", content: this.$page.post.cover },
+        { property: "og:image", content: 'images/posts/gridsome.png' },
       ],
     }
   },

@@ -6,7 +6,7 @@
           <h2 class="text-3xl sm:text-5xl font-sans font-black mb-1">
             <g-link to="/" class="text-black no-underline tracking-tight">Iman Sugirman</g-link>
           </h2>
-          <p class="text-grey-dark sm:text-2xl tracking-tight">Tutorial Blog, Cloud Server, Laravel dan Wordpress</p>
+          <h5 class="text-grey-dark sm:text-2xl font-sans">Tutorial Blog, Cloud Server, Laravel dan Wordpress</h5>
         </div>
       </header>
       <section>

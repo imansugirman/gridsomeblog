@@ -8,8 +8,9 @@
           </div>
           <div class="lg:border-grey-light bg-white lg:w-1/2 rounded-b lg:rounded-b-none lg:rounded-r px-4 py-2 flex flex-col leading-normal">
             <div class="mb-8">
+
               <p class="text-sm text-grey-dark flex items-center">
-                <span v-if="post.tags && post.tags.length > 0"> <g-link :to="`${post.tags[0].path}/`" class="inline-block text-orange hover:text-white hover:bg-orange font-sans font-bold text-xs sm:text-xs border border-orange px-4 py-1 mr-4 mb-2 rounded-full no-underline transition-color transition-bg">{{ titleCase(post.tags[0].title) }}</g-link></span>
+                <span v-if="post.tags && post.tags.length > 0"> <g-link :to="`${post.tags[0].path}/`" class="inline-block text-orange hover:text-white hover:bg-orange font-sans font-bold text-xs sm:text-xs border border-orange px-4 py-1 mr-4 mb-2 rounded-full no-underline transition-color transition-bg"> {{ titleCase(post.tags[0].title) }}</g-link></span>
               </p>
               <div class="text-indigo font-bold text-xl mb-2"><g-link :to="`${post.path}/`" class="text-indigo no-underline font-medium font-sans text-xl tracking-tight">{{ post.title }}</g-link></div>
               <p class="text-grey-darker font-serif" v-html="excerpt(post, 200, ' ...')"></p>
@@ -18,7 +19,7 @@
               <img class="w-10 h-10 rounded-full mr-4" src="/images/authors/iman-sugirman.png" alt="Iman Sugirman">
 
               <div class="text-sm">
-                <p class="text-black leading-none"><span v-if="post.author">Topic <g-link :to="`${post.author.path}/`" class="text-indigo text-bold capitalize no-underline border-b border-transparent hover:border-grey transition-border-color" v-if="post.author">{{ titleCase(post.author.title) }}</g-link></span></p>
+                <p class="text-black leading-none"><span v-if="post.author"><g-link :to="`${post.author.path}/`" class="text-indigo font-sans text-bold capitalize no-underline border-b border-transparent hover:border-grey transition-border-color" v-if="post.author">{{ titleCase(post.author.title) }}</g-link></span></p>
                 <p class="text-grey-black"><time :datetime="post.datetime" class="text-grey-black text-xs mb-2">{{ formatPublishDate(post.datetime) }}</time></p>
 
               </div>

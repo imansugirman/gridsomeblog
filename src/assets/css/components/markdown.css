@@ -16,10 +16,10 @@
   }
 
   a {
-    @apply text-blue no-underline transition-color;
+    @apply text-indigo no-underline transition-color;
 
     &:hover {
-      @apply text-blue-darker;
+      @apply text-indigo-darker;
     }
   }
 
@@ -33,8 +33,8 @@
   }
 
   .shiki-inline {
-    @apply bg-grey-lightest text-grey-darker !important;
-    @apply border border-grey-lighter text-xs px-2 py-1 rounded;
+    @apply bg-white text-orange font-sans font-bold !important;
+    @apply text-sm px-1 py-1 rounded;
   }
 
   mark {

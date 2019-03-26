@@ -3,6 +3,7 @@
     <main>
       <header>
         <div class="container xl:max-w-xl mx-auto text-center px-6 py-10 md:py-32 border-b border-grey-lighter">
+        
           <h2 class="text-3xl sm:text-5xl font-sans font-black mb-1">
             <g-link to="/" class="text-black no-underline tracking-tight">Iman Sugirman</g-link>
           </h2>

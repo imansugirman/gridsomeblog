@@ -120,7 +120,7 @@ docker
 ```
 Pada Docker 1.11.1, daftar lengkap dari subkomand yang tersedia meliputi:
 
-```
+```bash
 attach    Attach to a running container
 build     Build an image from a Dockerfile
 commit    Create a new image from a container's changes

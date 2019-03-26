@@ -5,7 +5,7 @@ description: ""
 date: 2019-03-16 00:27:25
 author: iman-sugirman
 tags:
-  - Ruby on Rails
+  - Rails
   - Devise
 cover: /images/posts/ruby.png
 fullscreen: false

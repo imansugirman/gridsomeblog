@@ -105,7 +105,7 @@ module.exports = {
 
   fonts: {
     'sans': [
-      'Sentinel',
+      'Miriam Libre',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
@@ -120,7 +120,7 @@ module.exports = {
       'sans-serif',
     ],
     'serif': [
-      'BentonSans',
+      'Fira Sans',
       'Constantia',
       'Lucida Bright',
       'Lucidabright',

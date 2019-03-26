@@ -11,7 +11,7 @@
 
         <footer v-if="$page.post.author || $page.post.tag" class="flex flex-wrap pb-10 sm:pb-16">
           <div>
-            <g-link v-for="tag in $page.post.tags" :key="tag.id" :to="`${tag.path}/`" class="inline-block text-blue hover:text-white hover:bg-blue font-sans font-bold text-xs sm:text-sm border border-blue px-4 py-2 mr-4 mb-2 rounded-full no-underline transition-color transition-bg">
+            <g-link v-for="tag in $page.post.tags" :key="tag.id" :to="`${tag.path}/`" class="inline-block text-indigo hover:text-white hover:bg-indigo font-sans font-bold text-xs sm:text-sm border border-indigo px-4 py-2 mr-4 mb-2 rounded-full no-underline transition-color transition-bg">
             <svg class="w-3 fill-current align-middle mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" role="img"><path d="M0 10V2l2-2h8l10 10-10 10L0 10zm4.5-4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>
             {{ tag.title }}
             </g-link>

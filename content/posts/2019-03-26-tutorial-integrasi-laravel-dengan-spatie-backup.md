@@ -8,7 +8,7 @@ tags:
   - Laravel
   - PHP
 cover: /images/posts/laravellogo.png
-fullscreen: true
+fullscreen: false
 ---
 Dalam kali ini akan dibahas mengenai Tutorial Backup Laravel Otomatis ke S3 atau ke local disk. Untuk lebih tau bisa dilihat package [Spatie Laravel Backup]('https://github.com/spatie/laravel-backup') agar bisa backup otomatis dengan menggunakan `Artisan Command` dan menggunakan User Interface atau bisa integrasi di Admin.
 

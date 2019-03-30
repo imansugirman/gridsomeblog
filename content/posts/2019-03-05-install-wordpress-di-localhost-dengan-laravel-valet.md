@@ -5,7 +5,8 @@ description: ""
 date: 2019-03-05 21:38:50
 author: iman-sugirman
 tags:
-  - Laravel Valet
+  - Laravel
+  - Valet
   - Wordpress
 cover: /images/posts/laravellogo.png
 fullscreen: false
